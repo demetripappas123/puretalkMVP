@@ -63,24 +63,6 @@ const impactData = [
   }
 ];
 
-const imageData = [
-  {
-    id: 1,
-    alt: "Customer Experience Dashboard",
-    description: "Experience seamless integration with our AI solutions, designed to enhance your business operations and customer interactions."
-  },
-  {
-    id: 2,
-    alt: "Analytics Overview",
-    description: "Gain valuable insights with our comprehensive analytics dashboard, helping you make data-driven decisions."
-  },
-  {
-    id: 3,
-    alt: "Integration Hub",
-    description: "Connect and manage all your tools in one place with our powerful integration platform."
-  }
-];
-
 export default function ContentContainer() {
   const [activeImage1, setActiveImage1] = useState(0);
   const [activeImage2, setActiveImage2] = useState(0);
@@ -96,11 +78,6 @@ export default function ContentContainer() {
     'Analytics Overview',
     'Integration Hub',
   ];
-  const imageDescriptions1 = [
-    'Experience seamless integration with our AI solutions, designed to enhance your business operations and customer interactions.',
-    'Gain valuable insights with our comprehensive analytics dashboard, helping you make data-driven decisions.',
-    'Connect and manage all your tools in one place with our powerful integration platform.',
-  ];
 
   const imageSources2 = [
     '/landing/puretalkdash.png',
@@ -112,11 +89,6 @@ export default function ContentContainer() {
     'How It Works 2',
     'How It Works 3',
   ];
-  const imageDescriptions2 = [
-    'First step of how it works.',
-    'Second step of how it works.',
-    'Third step of how it works.',
-  ];
 
   const imageSources3 = [
     '/landing/personalized-image-2.svg',
@@ -127,11 +99,6 @@ export default function ContentContainer() {
     'Personalized Image 2',
     'Ruth Personalized 1',
     'Icon 1',
-  ];
-  const imageDescriptions3 = [
-    'Personalized AI experience for your business.',
-    'Meet Ruth, your personalized AI agent.',
-    'AI-powered icon for your workflow.',
   ];
 
   // First image container headers and subheaders
