@@ -1,6 +1,6 @@
 'use client';
 
-import { colors } from '@/utils/colors';
+
 import { FaMicrophone } from 'react-icons/fa';
 
 const registerCall = async () => {

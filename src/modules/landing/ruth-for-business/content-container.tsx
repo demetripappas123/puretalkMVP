@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { FaLink, FaChartLine, FaUsers, FaRocket, FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import { FaLink, FaChartLine, FaUsers, FaRocket, FaChevronDown } from 'react-icons/fa';
 import { colors } from '@/utils/colors';
 
 const cardData = [
