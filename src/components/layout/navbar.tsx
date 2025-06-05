@@ -12,6 +12,7 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
+      console.log('scrollY:', window.scrollY);
 
       if (!isScrolledRef.current && scrollPosition > 24) {
         isScrolledRef.current = true;

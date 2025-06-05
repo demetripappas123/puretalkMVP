@@ -37,79 +37,54 @@ const card_data: CardData[] = [
 
 const TTSDemo = () => {
 	return (
-		<div
-			style={{
-				background: colors.bgGradient,
-			}}
-			className={'relative'}
-		>
-			<div className={'absolute bottom-0 left-0 right-0 top-0 h-[64%]'}>
+		<div className="relative w-full bg-[#18181b]">
+			<div className="absolute inset-0 w-full h-full pointer-events-none">
 				<Image
 					src={'/landing/tts-bg-grid.png'}
 					alt={'tts_bg_grid'}
 					width={1920}
 					height={1000}
-					className={'h-full w-full object-cover lg:object-contain'}
+					className={'h-full w-full object-cover opacity-10 mix-blend-multiply'}
+					style={{ filter: 'brightness(0.5) grayscale(1)' }}
 				/>
 			</div>
-			<div className="mx-auto max-w-screen-xl px-4 pb-24 pt-16 xl:px-0">
+			<div className="mx-auto max-w-6xl px-4 pb-20 pt-0 xl:px-0">
 				<div className="flex h-full flex-col items-center justify-center">
-					<Badge
-						content="AI Text to Speech"
-						extraClassNames="bg-white text-black font-medium"
-					/>
+					<div className="text-xs font-semibold text-indigo-300 tracking-widest uppercase mb-2">AI Text to Speech</div>
+					<div className="text-2xl md:text-3xl font-bold text-white mb-1">Create with the most powerful</div>
+					<div className="text-xl md:text-2xl font-bold text-white mb-4">AI Text to Speech</div>
 
 					<div className="pt-10" />
 
-					<TitleText
-						title={'Create with the most powerful'}
-						extraClassNames={'text-white'}
-					/>
-
-					<div className="pt-2 md:pt-0" />
-
-					<TitleText
-						title={'AI Text to Speech'}
-						extraClassNames={'text-white'}
-					/>
-
-					<div className="pt-12" />
-
 					<TTSDemoSlider />
 
-					<div className="pt-24" />
+					<div className="pt-10" />
 
-					<div className={'grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4'}>
+					<div className={'grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 mt-6'}>
 						{card_data.map((card: CardData, index: number) => (
 							<div
-								className={'h-fit rounded-lg border-[#0000001A] bg-white px-4 py-4'}
+								className={'h-fit rounded-xl bg-[#23232a] px-3 py-3'}
 								key={index}
 							>
-								<div className="flex flex-col gap-4">
+								<div className="flex flex-col gap-2 items-center text-center">
 									<Image
 										src={card.image}
 										alt={'card_image'}
-										width={50}
-										height={50}
+										width={40}
+										height={40}
 									/>
-
-									<h3 className={'text-lg font-semibold'}>{card.title}</h3>
-
-									<p className={'text-base font-normal'}>{card.description}</p>
+									<h3 className={'text-base font-semibold text-white'}>{card.title}</h3>
+									<p className={'text-xs font-normal text-gray-300'}>{card.description}</p>
 								</div>
 							</div>
 						))}
 					</div>
 
-					<div className="pt-12" />
-
-					<div className="flex flex-col items-center gap-5 lg:flex-row">
-						<div className="flex-1 text-center text-xl text-white lg:text-start">
-							Generate lifelike speech in any language and voice with the most powerful text to speech (TTS) technology that combines
-							advanced AI with emotive capabilities.
-						</div>
-						<button className={'rounded-full bg-gray-dark-7 px-16 py-3 text-white lg:w-fit'}>Try for Free</button>
+					<div className="pt-6" />
+					<div className="flex-1 text-center text-base text-gray-200 lg:text-start mb-2">
+						Generate lifelike speech in any language and voice with the most powerful text to speech (TTS) technology that combines advanced AI with emotive capabilities.
 					</div>
+					<button className={'rounded-full bg-[#23232a] px-10 py-2 text-white text-sm font-semibold border border-gray-700 hover:bg-[#282834] transition lg:w-fit'}>Try for Free</button>
 				</div>
 			</div>
 		</div>
