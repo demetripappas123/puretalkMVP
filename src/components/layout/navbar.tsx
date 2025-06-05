@@ -31,13 +31,12 @@ export default function Navbar() {
     <div 
       className={`w-full sticky top-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'h-16 bg-white/80 backdrop-blur-md shadow-md' 
+          ? 'h-16 shadow-md' 
           : 'h-20 shadow-md'
       }`} 
       style={{ 
-        background: isScrolled 
-          ? 'rgba(255, 255, 255, 0.8)' 
-          : colors.bgGradient 
+        background: 'black',
+        boxShadow: '0 4px 30px rgba(255, 255, 255, 0.05)'
       }}
     >
       <div className="container mx-auto h-full flex items-center px-4">
@@ -47,21 +46,30 @@ export default function Navbar() {
             alt="PureTalk AI Logo"
             width={140}
             height={140}
-            className={`transition-all duration-300 ml-30 ${!isScrolled ? 'filter brightness-0 invert' : ''}`}
+            className="transition-all duration-300 ml-30"
           />
         </Link>
-        <div className="flex items-center gap-8 ml-auto">
-          <Link href="/ruth" className={`text-lg font-semibold transition-colors duration-300 ${isScrolled ? 'bg-gradient-to-r from-indigo-500 to-blue-400 bg-clip-text text-transparent' : 'text-white'}`}>RUTH</Link>
-          <Link href="/tts" className={`text-lg font-semibold transition-colors duration-300 ${isScrolled ? 'bg-gradient-to-r from-indigo-500 to-blue-400 bg-clip-text text-transparent' : 'text-white'}`}>TTS</Link>
-          <Link href="/docs" className={`text-lg font-semibold transition-colors duration-300 ${isScrolled ? 'bg-gradient-to-r from-indigo-500 to-blue-400 bg-clip-text text-transparent' : 'text-white'}`}>Documentation</Link>
-          <Link href="/solutions" className={`text-lg font-semibold transition-colors duration-300 ${isScrolled ? 'bg-gradient-to-r from-indigo-500 to-blue-400 bg-clip-text text-transparent' : 'text-white'}`}>Solutions</Link>
-          <Link href="/support" className={`text-lg font-semibold transition-colors duration-300 ${isScrolled ? 'bg-gradient-to-r from-indigo-500 to-blue-400 bg-clip-text text-transparent' : 'text-white'}`}>Support</Link>
-          <Link href="/signup">
-            <button className={`px-5 py-2 rounded-full font-semibold transition-colors duration-300 ${isScrolled ? 'bg-gradient-to-r from-indigo-500 to-blue-400 text-white' : 'bg-indigo-600 text-white'}`}>Try For Free</button>
-          </Link>
-          <Link href="/dashboard">
-            <button className={`px-5 py-2 rounded-full font-semibold transition-colors duration-300 ${isScrolled ? 'bg-gradient-to-r from-indigo-900 to-indigo-600 text-white' : 'bg-indigo-900 text-white'}`}>Dashboard</button>
-          </Link>
+        <div className="flex items-center ml-auto">
+          <div className="flex gap-6">
+            <Link href="/ruth" className="text-lg font-semibold transition-colors duration-300 text-blue-200">RUTH</Link>
+            <Link href="/tts" className="text-lg font-semibold transition-colors duration-300 text-blue-200">TTS</Link>
+            <Link href="/docs" className="text-lg font-semibold transition-colors duration-300 text-blue-200">Documentation</Link>
+            <Link href="/solutions" className="text-lg font-semibold transition-colors duration-300 text-blue-200">Solutions</Link>
+            <Link href="/support" className="text-lg font-semibold transition-colors duration-300 text-blue-200">Support</Link>
+          </div>
+          <div className="flex gap-2 ml-4">
+            <Link href="/signup">
+              <button className="px-5 py-2 rounded-md font-semibold border border-white bg-transparent text-white transition-colors duration-300 hover:bg-white hover:text-black">Try For Free</button>
+            </Link>
+            <Link href="/dashboard">
+              <button 
+                className="px-5 py-2 rounded-md font-semibold text-white transition-colors duration-300"
+                style={{ background: colors.bgGradient }}
+              >
+                Dashboard
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

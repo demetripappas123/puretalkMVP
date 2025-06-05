@@ -21,7 +21,7 @@ export default function ContentContainer() {
   ];
 
   return (
-    <div className="w-full bg-[#18181b] flex flex-col gap-8 items-center pt-12 relative overflow-visible">
+    <div className="w-full bg-[#18181b] flex flex-col gap-8 items-center pt-8 relative overflow-visible">
       {/* Top Card (Full Width) */}
       <div className="w-full max-w-6xl bg-[#23232a] rounded-2xl p-10 flex flex-col md:flex-row justify-between items-center gap-8 shadow-xl ml-32 mr-32">
         {/* Text Section */}

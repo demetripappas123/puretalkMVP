@@ -12,8 +12,8 @@ export default function Buttons() {
         Try For Free
       </button>
       <button 
-        className="px-8 py-3 rounded-full font-semibold border-2 transition-colors"
-        style={{ borderColor: colors.primary }}
+        className="px-8 py-3 rounded-full font-semibold text-white transition-colors"
+        style={{ background: colors.bgGradient }}
       >
         Contact a Partner
       </button>

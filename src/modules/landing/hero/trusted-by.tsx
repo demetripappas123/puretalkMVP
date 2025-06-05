@@ -30,15 +30,15 @@ export default function TrustedBy() {
   return (
     <div className="w-full max-w-[1200px] mx-auto mt-8 mb-4">
       <div className="text-center mb-8">
-        <h3 className="text-lg font-medium text-gray-600">Trusted By</h3>
+        <h3 className="text-lg font-medium text-white">Trusted By</h3>
       </div>
       <div className="grid grid-cols-8 gap-8">
         {companies.map((company, index) => (
           <div key={index} className="flex flex-col items-center justify-center gap-2">
-            <div className="text-gray-400 hover:text-gray-600 transition-colors">
+            <div className="text-white hover:text-gray-200 transition-colors">
               {company.icon}
             </div>
-            <span className="text-sm text-gray-500">{company.name}</span>
+            <span className="text-sm text-white">{company.name}</span>
           </div>
         ))}
       </div>
