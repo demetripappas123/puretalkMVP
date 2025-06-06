@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="420" height="340" viewBox="0 0 420 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="420" height="340" rx="48" fill="#23232A"/>
+  <rect x="12" y="12" width="396" height="316" rx="36" fill="#1e293b"/>
+  <circle cx="90" cy="90" r="60" fill="#3B82F6" opacity="0.08"/>
+  <!-- Clock icon -->
+  <g>
+    <circle cx="210" cy="90" r="36" fill="#3B82F6" opacity="0.18"/>
+    <circle cx="210" cy="90" r="24" stroke="#3B82F6" stroke-width="4" fill="none"/>
+    <path d="M210 90V75" stroke="#3B82F6" stroke-width="4" stroke-linecap="round"/>
+    <path d="M210 90H225" stroke="#3B82F6" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="50%" y="62%" text-anchor="middle" fill="#3B82F6" font-size="88" font-weight="bold" dominant-baseline="middle">24/7</text>
+</svg> 

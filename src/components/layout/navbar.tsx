@@ -59,7 +59,7 @@ export default function Navbar() {
           </div>
           <div className="flex gap-2 ml-4">
             <Link href="/signup">
-              <button className="px-5 py-2 rounded-md font-semibold border border-white bg-transparent text-white transition-colors duration-300 hover:bg-white hover:text-black">Try For Free</button>
+              <button className="px-5 py-2 rounded-md font-semibold border border-white bg-transparent text-white transition-colors duration-300 hover:bg-white hover:text-black">Sign Up</button>
             </Link>
             <Link href="/dashboard">
               <button 
